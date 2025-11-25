@@ -49,6 +49,7 @@ int main(int argc, char *argv[]) {
     // Encrypt plaintext and print
     printf("Ciphertext: ");
     encrypt(key,plain);
+    return 0;
 }
 
 // Function Definitions
@@ -90,5 +91,5 @@ void encrypt(char key[], char plaintext[]) {
         }
     }
     ciphertext[len] = '\0';
-    printf("%s", ciphertext);
+    printf("%s\n", ciphertext);
 }
