@@ -56,7 +56,7 @@ int main(int argc, char *argv[]) {
 
 int check_unique(char key[]) {
     /*
-    Homogenize case and iterate through the key twice to check for duplicate characters
+    Homogenize case and iterate through the key once for each character to check for duplicate characters
     */
     int len = strlen(key);
     for (int i = 0; i < len; i++) {
